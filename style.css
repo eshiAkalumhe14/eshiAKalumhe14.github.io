@@ -1,0 +1,178 @@
+div.heading{
+
+    font-size: 20px;
+    font-family:"Optima", sans-serif;
+    padding: 10px;
+    display: flex;
+    border-top: 3px solid blueviolet;
+    border-bottom: 2px solid lightgray;
+    
+    
+    justify-content: space-evenly;
+    column-count: 6;
+    align-items: center;
+}
+a{
+    color: rgb(78, 75, 75);
+}
+.active{
+    color: blueviolet;
+}
+
+a:visited{
+    text-decoration: none;
+}
+a:link {
+    
+    text-decoration: none; 
+}
+a:active{
+    
+    text-decoration: none;
+}
+a:hover{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+
+section{
+    display:flex;
+}
+
+.vl{
+    color: lightgray;
+    height: 750px;
+    
+    border-left: 1px solid lightgray;
+    padding-top: px;
+}
+
+
+.caption{
+    font-size: 26px;
+    font-family:'Courier', serif;
+    padding-bottom: 7px;
+}
+
+.major{
+    font-size: 20px;
+    font-family:"Courier", sans-serif;
+    padding: 7px;
+}
+
+.email{
+    color: blueviolet;
+    font-family:"Optima", sans-serif;
+    padding-top: 10px;
+}
+
+
+img{
+    border-radius: 50%;
+    padding: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+.description{
+    font-size: 50px;
+    font-family:"Courier", sans-serif;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.about{
+    font-size: 15px;
+    font-family:"Optima", sans-serif;
+    padding-left: 50px;
+}
+
+.hr{
+    border-top: 0.5px solid #ccc;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%
+}
+
+.end{
+    color: #ccc;
+    padding-top: 60px;
+}
+
+.creds{
+    padding-top: 20px;
+    font-size: 20px;
+    font-family:"Optima", sans-serif;
+    padding-left: 30px;
+}
+
+.location{
+    padding-left: 50px
+}
+
+.dashed{
+    list-style-type: none;
+   
+}
+
+.dashed > li {
+    text-indent: -20px;
+  }
+  
+.dashed > li:before{
+    content: "-";
+    text-indent: -20px;
+    
+}
+
+progress{
+    width: 800px;
+    height: 50px;
+}
+
+.cols{
+    padding: 20px;
+}
+
+@media screen and (max-width: 1200px){
+    section{
+        flex-direction: column;
+    }
+    .about{
+        padding-left: 30px;
+    }
+    
+    img{
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 300px;
+    }
+    .description{
+        padding: 20px;
+    }
+
+    .creds{
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .location{
+        padding-left: 0px
+    }
+    .vl{
+        display:none;
+    }
+
+    progress{
+        width: 500px;
+
+    }
+    
+}
